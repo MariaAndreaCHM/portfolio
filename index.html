@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- FontAwesome 4-->
+    <script src="https://kit.fontawesome.com/f09689b89n.js" crossorigin="anonymous"></script>
+    <!--FontAwesome 5-->
+    <link rel="icon" href="images/logo_maria-removebg-preview.png" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!--animation aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+    <title>Maria Andrea Copca </title>
+</head>
+
+<body>
+    <header class="menu1">
+
+        <div class="translator">
+            <img src="images/logo_maria-removebg-preview.png" height=70px width="auto" />
+
+            <div id="google_translate_element"></div>
+
+        </div>
+        <div class="clock" onload="clock()">
+            <img src="images/clock template-01.svg" height="120" width="120" id="imgclock">
+            <div class="hour hand" id="hour"></div>
+            <div class="minute hand" id="minute"></div>
+            <div class="seconds hand" id="seconds"></div>
+        </div>
+        <div class="menu">
+            <a href="#suis">
+                <i class="fas fa-user"></i>
+            </a>
+            <a href="#sk">
+                <i class="fas  fa-code"></i>
+            </a>
+            <a href="#portafolio">
+                <i class="fas fa-info"></i>
+            </a>
+            <a href="#experience">
+                <i class="fa fa-briefcase"></i>
+            </a>
+            <a href="#contact">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <button id="toggle-btn">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+    </header>
+    <a id="button">
+        <i class="fas fa-angle-up" style="font-size: 40px;;color:white"></i>
+    </a>
+    <div class="card" id="suis">
+        <div class="father">
+            <div class="information">
+                <h1>Qui suis-Je?...</h1>
+                <p class="texto">Salut, Je suis María Andrea Copca , je suis UX designer et Développeuse web. J'ai déjà
+                    développé quelqu' applications web, applications mobiles,API rest et bases de données. </p>
+
+
+            </div>
+            <figure data-aos="fade-left">
+                <img src="images/moi.jpg" alt="my_photo">
+                <figcaption>UX designer et développeuse web</figcaption>
+            </figure>
+
+        </div>
+    </div>
+
+    <div class="sks" id="sk">
+        <div class="logiciel" id="logiciel_grid1">
+
+            <div class="container" data-aos="zoom-in-left">
+                <h2>Mes compétences en codage</h2>
+                <div class="skills">
+                    <div class="details">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="html-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>CSS</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="css-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Javascript</span>
+                        <span>72%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="js-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>jQuery</span>
+                        <span>48%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="jQuery-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Angular Js</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="angular-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Suite Adobe</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="adobe-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logiciel" id="logiciel_grid2">
+
+            <div class="container" data-aos="zoom-in-left">
+                <h2>Mes compétences en codage</h2>
+                <div class="skills">
+                    <div class="details">
+                        <span>Android</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="android-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Figma</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="figma-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Java</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="java-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>SQL</span>
+                        <span>78%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="sql-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>React-native</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="react-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Wordpress</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="wp-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logiciel" id="logiciel_grid3">
+
+            <div class="container" data-aos="zoom-in-left" >
+                <h2>Qualités</h2>
+                <ul>
+                    <li>Déterminée</li>
+                    <li>Autonome</li>
+                    <li>Creative</li>
+                    <li>Capacité d'adaptation</li>
+                    <li>Prise d'initiatives</li>
+                    <li>Ouverture d'esprit</li>
+                    <li>Empathie</li>
+                    <li>Travail d'équipe</li>
+
+                    <li>Proactive</li>
+
+
+                    <div class="banderas">
+                        <img src="images/uk_flag.png" height=40px width="auto" />
+                        <img src="images/spain_flag.png" height=40px width="auto" style="margin: 0px 20px;" />
+                        <img src="images/french_flag.png" height=40px width="auto" />
+                    </div>
+                </ul>
+                <div class="fish">
+                    <div class="magikarp">
+                       <div class="fin-top"></div>
+                       <div class="fin-bottom"></div>
+                       <div class="gill-left">
+                          <div class="gill1"></div>
+                       </div>
+                       <div class="gill-right">
+                          <div class="gill2"></div>
+                       </div>
+                       <div class="eye"></div>
+                       <div class="mouth"></div>
+                       <div class="moustache-left"></div>
+                       <div class="moustache-right"></div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card2" id="portafolio">
+        <div class="contenedor1">
+            <h2 class="titulo">Portfolio</h2>
+            <div class="contenedor-articulo">
+                <div class="articulo" data-aos="zoom-in-right" id="shifumi">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <p class="subtitles">Shifumi</p>
+                    <p>Le jeu web shifummi a été développé en js, css, html et sweet alert.</p>
+                    <a href="https://mariaandreachm.github.io/shifummi/">Plus.....</a>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right" id="android">
+                    <i class="fas fa-code"></i>
+                    <p class="subtitles">Développement mobile</p>
+
+                    <p>Les micro-applications mobiles ont été développées en Android et React native, avec base de
+                        données et API.</p>
+
+                </div>
+                <div class="articulo" data-aos="zoom-in-right" id="vue">
+                    <i class="fab fa-vuejs"></i>
+                    <p class="subtitles">Vue Js</p>
+                    <p>J'ai développé des applications web utilisant le framework Vue js pour un système de gestion des
+                        cours et des diplômes destiné aux enseignants de l'université. </p>
+
+                </div>
+                <div class="articulo" data-aos="zoom-in-right" id="angular">
+                    <i class="fab fa-angular"></i>
+                    <p class="subtitles">Angular Js</p>
+                    <p>J'ai développé des applications Web utilisant le framework angular js comme un système de stock.
+                    </p>
+                    <!--<a href="https://mariaandreachm.github.io/inventario/">Plus.....</a>-->
+                </div>
+                <div class="articulo" data-aos="zoom-in-right" id="ideal">
+                    <i class="fas fa-chart-pie"></i>
+                    <p class="subtitles">Ideal México</p>
+                    <p>L'application web pour l'entreprise Ideal a été développée avec Angular JS, HTML, CSS,
+                        Boostrap.Pour l'API a été développé dans Spring Boot et pour la base de données MySQL a été
+                        utilisé.</p>
+
+                </div>
+                <div class="articulo" data-aos="zoom-in-right" id="fotos">
+                    <i class="fas fa-images"></i>
+                    <p class="subtitles">Apcomm</p>
+                    <p>Développement du site vitrine et l'application web.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="card contenedor" id="experience">
+        <section class="textos-questions">
+            <h2 class="titulo">Experience</h2>
+            <ul>
+                <li>Collaboration en projets universitaires en développant des applications web et des applications
+                    mobiles pour des processus internes tels que la gestion des cours et des diplômes et
+                    l'administration de l'orientation scolaire aussi un app mobile pour planifier les rende-vous de un
+                    clinique veterinaire.</li>
+                <li>Développement une application web qui gère les stock et optimise les processus de vente pour une
+                    entreprise mexicaine de maquillage.</li>
+                <li>Développement d'un site vitrine d'un centre commercial d'un ville Française pour augmenter ses
+                    clients.</li>
+                <li>Développement d'un site web pour un association en prennant en compte l'UX et le SEO.</li>
+            </ul>
+
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="container2">
+                    <div class="image-cube">
+                        <div class="front">
+                            <img src="images/inicio.png" class="imgs_carrousel" alt="web_interface" />
+                        </div>
+                        <div class="right">
+                            <img src="images/ipod.PNG" class="imgs_carrousel" alt="ipod_interface" />
+                        </div>
+                        <div class="back">
+                            <img src="images/contras.png" class="imgs_carrousel" alt="webpass_interface" />
+                        </div>
+                        <div class="left">
+                            <img src="images/arr.PNG" class="imgs_carrousel" alt="interface_mobile" />
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button id="prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button id="next">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+    <footer class="socialMedias" id="contact">
+        <div class="medias">
+            <a href="tel:+33783998985">
+                <img src="images/phone_call.png" alt="phoneNumber" height="60px" width="auto" />
+            </a>
+
+        </div>
+        <div class="medias">
+            <a href="https://www.linkedin.com/in/maria-andrea-copca-hernandez-magro/?locale=fr_FR">
+                <img src="images/linkedin.png" alt="linkedinProfile" height="60px" width="auto" />
+            </a>
+
+        </div>
+        <div class="medias">
+            <a href="mailto:copca.mariaandrea@gmail.com">
+                <img src="images/email.png" alt="email" height="60px" width="auto" />
+            </a>
+        </div>
+
+
+    </footer>
+
+    <div>
+
+
+
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script src="functions.js"></script>
+
+</html>
