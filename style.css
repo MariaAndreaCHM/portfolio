@@ -1,0 +1,601 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background: rgb(252,180,172);
+  background: linear-gradient(0deg, rgba(253, 187, 45, 0.679) 0%, rgb(242, 158, 149) 100%);
+}
+.padre{
+  display: flex;
+  margin: 2%;
+  justify-content: center;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-content: center;
+}
+.izquierdo{
+  width: 60%;
+  justify-items: center;
+
+}
+
+
+.row{
+  justify-content: center;
+}
+.derecho{
+  width: 30%;
+align-content: center;
+align-self: center;
+}
+.container-fluid {
+  background: rgba( 247, 188, 154, 0.65 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    
+
+}
+.imagenes{
+  justify-content: center;
+}
+.row>img{
+  width: 50%;
+}
+.imgs {
+
+    height: 90%;
+    width: 50%;
+    margin: 1rem 10%;
+    flex-wrap: wrap;
+}
+
+
+.experiencia{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+div.experiencia{
+  margin-top: 20px;
+}
+
+.col-sm-4 {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-right: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+  
+}
+
+
+
+#icono_estudios {
+   
+    color: rgb(10, 10, 82);
+    font-size: 45px;
+
+
+}
+
+h1 {
+    font-size: 40px;
+    
+}
+
+p {
+    font-size: 25px;
+}
+
+.options:active {
+    opacity: 0.6;
+}
+
+
+
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.information {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 58%;
+    padding: 10px 30px;
+    font-weight: 400;
+   
+
+}
+
+
+div>.languages {
+
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ 
+
+
+}
+
+.languages>img {
+    margin: 10px;
+    justify-content: space-around;
+}
+#monstruo{
+    position: relative;
+    animation: fly 2s ease-out;
+    height: 300px;
+    width: auto;
+}
+.txtanimate {
+    animation:shakeY ;
+    animation-duration: 2s;
+}
+.typewriter {
+    color: black;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: wrap; 
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+
+@keyframes fly {
+    0% {
+        opacity: 0;
+        left: -700px;
+      }
+      100% {
+        opacity: 1;
+        left: 0;
+      }
+    
+  }
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  #link{
+    text-decoration:solid;
+    font: bold;
+  }
+  .contact{
+    margin-top: 30%;
+  }
+  
+  #option1:hover .tooltiptext {
+    visibility: visible;
+  }
+  #option2:hover .tooltiptext {
+    visibility: visible;
+  }
+  #option3:hover .tooltiptext {
+    visibility: visible;
+  }
+  #option4:hover .tooltiptext {
+    visibility: visible;
+  }
+  #option5:hover .tooltiptext {
+    visibility: visible;
+  }
+  #option6:hover .tooltiptext {
+    visibility: visible;
+  }
+  #option7:hover .tooltiptext {
+    visibility: visible;
+  }
+  #option8:hover .tooltiptext {
+    visibility: visible;
+  }
+  #option9:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .sks{
+    display:grid;
+    margin-top: 10%;
+   
+    gap: 50px;
+}
+#logiciel_grid1{
+    grid-column-start: 1;
+  grid-column-end: 2;
+}
+#logiciel_grid2{
+    grid-column-start: 2;
+  grid-column-end: 3;
+}
+#logiciel_grid3{
+    grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content:center;
+ 
+}
+.container2{
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgba(255,255,255,0.06);
+    border: 2px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+li{
+    margin-top: 20px;
+   
+}
+
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 7px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #badefc;
+    border: 1px solid #1c97fc;
+    box-shadow: 0 0 5px rgba(28,151,252,0.6);
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 82%;
+    }
+}
+#jQuery-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 68%;
+    }
+}
+#adobe-bar{
+    animation: adobe-fill 2s forwards;
+}
+@keyframes adobe-fill{
+    100%{
+        width: 60%;
+    }
+}
+#angular-bar{
+    animation: angular-fill 2s forwards;
+}
+@keyframes angular-fill{
+    100%{
+        width: 90%;
+    }
+}
+#android-bar{
+    animation: android-fill 2s forwards;
+}
+@keyframes android-fill {
+    100%{
+        width: 70%;
+    }
+}
+#figma-bar{
+    animation: figma-fill 2s forwards;
+}
+@keyframes figma-fill{
+    100%{
+        width: 75%;
+    }
+}
+
+#java-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 82%;
+    }
+}
+#sql-bar{
+    animation: sql-fill 2s forwards;
+}
+@keyframes sql-fill{
+    100%{
+        width: 78%;
+    }
+}
+#react-bar{
+    animation: react-fill 2s forwards;
+}
+@keyframes react-fill {
+    100%{
+        width: 60%;
+    }
+}
+#wp-bar{
+    animation: wp-fill 2s forwards;
+}
+@keyframes wp-fill{
+    100%{
+        width: 85%;
+    }
+}
+#cv{
+    transition: transform ease-in-out 0.3s;
+    height: 500px;
+    width: auto;
+}
+#cv:hover { transform: scale(1.7); }
+.btn{
+    
+    font-size: 20px;
+    margin-top: 15px;
+    color:black;
+
+}
+#buho{
+  height: 210px;
+  width: auto;
+}
+#experiencia_img,#port{
+  height: 270px;
+  width: auto;
+}
+#ex1,#ex2,#ex3{
+  height: 150px;
+  width: auto;
+}
+#ideal{
+height: 160px;
+width: auto;
+}
+#apcomm{
+  height: auto;
+  width: 300px;
+}
+#soy{
+  height: 300px;
+  width: auto;
+}
+@media only screen and (max-width: 426px) {
+  #soy{
+    height: 150px;
+    width: auto;
+  }
+  #buho{
+    height: 100px;
+    width: auto;
+  }
+  #experiencia_img{
+    height: 150px;
+    width: auto;
+  }
+  #port{
+    height: 130px;
+    width: auto;
+  }
+  #ex1,#ex2,#ex3{
+    height: 100px;
+    width: auto;
+  }
+  #ideal{
+    height: 100px;
+    width: auto;
+    }
+    #apcomm{
+      height: auto;
+      width: 150px;
+    }
+    #cv{
+     
+      height: 200px;
+      width: auto;
+  }
+  #monstruo{
+    
+    height: 100px;
+    width: auto;
+}
+.sks{
+  display:grid;
+  margin-top: 10%;
+ 
+  gap: 50px;
+}
+#logiciel_grid1{
+  grid-column-start: 1;
+grid-column-end: 2;
+}
+#logiciel_grid2{
+  grid-row-start: 2;
+  grid-column-end: 3;
+  grid-column-start: 1;
+grid-column-end: 2;
+}
+p{
+  font-size: 12px;
+}
+
+}
+
+.contacto_principal{
+    display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.iconos,.logo{
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+.logo {
+    animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+.evidence{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+}
+.span_text{
+
+  color: black;
+}
+.box{
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.box:hover{
+    animation:shakeY ;
+    animation-duration: 2s;
+}
+.iconos:hover{
+    animation:tada ;
+    animation-duration: 2s;
+}
+#exp {
+    animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+#port{
+    animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
+  
+  
